@@ -2067,7 +2067,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
     margin-top: 0 !important;
     padding-top: 15px !important;
 }
@@ -2126,12 +2126,12 @@
         margin-top: 70px;
     }
     .pizza-special-pizza-container{
-        background-position: 38% 11%;
+        background-position: 30% 11%;
         background-size: 1534px;
-        height: 702px;
+        height: 700px;
     }
     .pizza-new-york-container {
-        min-height: 580px;
+        min-height: 577px;
         padding: 20px 0 0 20px;
     }
     .italy-pizza-menu-wraper {
@@ -2141,23 +2141,23 @@
         margin-right: 25px !important;
     }
     .pizza-new-york-container h2{
-        font-size: 36px;
+        font-size: 30px;
     }
     .pizza-new-york-container h3{
-        font-size: 18px;
+        font-size: 17px;
     }
     .pizza-new-york-container h4{
         letter-spacing: 0.3px;
     }
     .pizza-new-york-container p, .new-york-dollar{
-        font-size: 18px;
+        font-size: 14px;
     }
     .pizza-new-york-container h5{
-        font-size: 14.6px;
+        font-size: 16.6px;
         letter-spacing: 0.3px;
     }
     .new-york-pizza-freepik {
-        font-size: 14.6px;
+        font-size: 16.6px;
     }
 }
 @media screen and (min-width:1024px){
