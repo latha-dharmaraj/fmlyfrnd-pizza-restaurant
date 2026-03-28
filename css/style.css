@@ -1,0 +1,2694 @@
+:root {
+    --default-margin-top: 100px;
+    --default-margin-bottom: 100px;
+    --default-width: 100%;
+    --default-height: 100%;
+    --default-orange-red-clr: #e73d0c;
+    --default-black-clr: #111111;
+    --default-font-family: 'Open Sans', sans-serif;
+    --default-white-clr: #ffffff;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width:767px) {
+    .show-for-small-only {
+        display: block;
+    }
+    .hide-for-small-only {
+        display: none;
+    }
+    .show-for-both{
+        display: block;
+    }
+}
+@media screen and (min-width:768px) {
+    .show-for-small-only {
+        display: none;
+    }
+    .hide-for-small-only {
+        display: block;
+    }
+    .show-for-both{
+        display: block;
+    }
+}
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 29px 20px 32px;
+}
+.fmly-frnd-pizza-rst-logo-img {
+    width: 64px;
+    height: auto;
+}
+.fmly-frnd-pizza-rst-logo-img img {
+    width: 100%;
+}
+.nav-width-logo {
+    display: none;
+}
+.fa-bars {
+    color: var(--default-black-clr);
+    font-size: 25px;
+}
+.side-nav-bar {
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0 0 0 / 18%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.side-nav-bar .nav-bar {
+    width: 230px;
+    height: 500px;
+    background-color: var(--default-black-clr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.nav-bar h3 {
+    color: var(--default-white-clr);
+    font-size: 25px;
+    color: var(--default-white-clr);
+    text-align: left;
+    margin: 20px 20px 15px 20px;
+}
+.nav-bar:hover{
+    cursor: pointer;
+}
+.nav-bar p {
+    font-family: var(--default-font-family);
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: var(--default-white-clr);
+    align-self: center;
+    margin: 3px 0 20px;
+}
+.side-nav-bar {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav-bar {
+    background-color: #000000db;
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.nav-bar p:hover,
+.nav-bar p:focus {
+    color: #333;
+}
+.nav-bar h3 {
+    font-weight: 100;
+    font-size: 27px;
+    color: var(--default-white-clr);
+    text-align: right;
+    margin: 10px 20px 30px;
+}
+.nav-bar a {
+    font-family: var(--default-font-family);
+    color: var(--default-white-clr);
+    font-size: 20px;
+    margin: 13px;
+    text-decoration: none;
+}
+.nav-bar a:hover{
+    color: #a1a1a1;
+}
+.nav-open {
+    display: block;
+    width: 100%;
+}
+
+/* Life is a Combiantion of Magic and Pizza */
+
+.combination-container, .combination-wraper{
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.life-combination-content-container h2 {
+    font-family: "Roboto", sans-serif;
+    color: var(--default-white-clr);
+    font-weight: bold;
+    font-size: 39.7px;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+.life-combination-content-container h3 {
+    font-family: "Roboto", sans-serif;
+    color: var(--default-white-clr);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 17px;
+    letter-spacing: 3.5px;
+}
+.life-combination-content-container h5 {
+    font-family: var(--default-font-family);
+    color: #808080;
+    font-weight: 100;
+    font-size: 15.6px;
+    letter-spacing: 0.3px;
+    margin-bottom: 22px;
+}
+.life-comb-freepik {
+    color: #808080;
+    text-decoration: none;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 2px;
+}
+.life-comb-freepik:hover{
+    border-color: var(--default-orange-red-clr);
+}
+.life-comb-btn {
+    font-family: var(--default-font-family);
+    color: var(--default-white-clr);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    background-color: transparent;
+    border-color: var(--default-orange-red-clr);
+    height: 57px;
+    /* border-radius: 29px; */
+}
+.life-combination-content-container button:hover {
+    background-color: var(--default-orange-red-clr);
+    cursor: pointer;
+}
+/* Right side */
+.life-combination-img-container {
+    background-image: url("../images/chef-holding-delicious-pizza-img-sec-one.jpg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    background-size: 450px;
+    width: 100%;
+    height: 295px;
+}
+
+@media screen and (min-width:414px){
+    .life-combination-content-container h2 {
+        font-size: 43.7px;
+        letter-spacing: 0.3px;
+        margin-bottom: 20px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 17px;
+        margin-bottom: 17px;
+        letter-spacing: 3.5px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 17.6px;
+        letter-spacing: 0.3px;
+        margin-bottom: 22px;
+    }
+    .life-comb-freepik {
+        padding-bottom: 2px;
+    }
+    .life-comb-btn {
+        font-size: 13px;
+        letter-spacing: 1.8px;
+        height: 59px;
+    }
+    .life-combination-img-container {
+        background-position: 6% 50%;
+        background-size: 475px;
+        width: 100%;
+        height: 315px;
+    }
+}
+@media screen and (min-width:600px){
+    .life-combination-content-container h2 {
+        font-size:  46.7px;
+        letter-spacing: 0.3px;
+        margin-bottom: 28px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 19px;
+        margin-bottom: 28px;
+        letter-spacing: 3.5px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 19px;
+        letter-spacing: 0.3px;
+        margin-bottom: 30px;    
+    }
+    .life-comb-freepik {
+        padding-bottom: 2px;
+    }
+    .life-comb-btn {
+        font-size: 15px;
+        letter-spacing: 2px;
+        height: 65px;
+    }
+    .life-combination-img-container {
+        background-position: 18% 21%;
+        background-size: 540px;
+        width: 100%;
+        height: 360px;
+    }
+}
+@media screen and (min-width:768px){
+    .life-combination-content-container h2 {
+        font-size:  27px;
+        letter-spacing: 0.3px;
+        margin-bottom: 15px;
+    }
+    .life-combination-wraper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0 !important;
+    }
+    .life-combination-content-container{
+        padding-left: 80px;
+        margin-bottom: 0 !important;
+    }
+    .life-combination-content-container h3 {
+        font-size: 11px;
+        margin-bottom: 18px;
+        letter-spacing: 2px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 11px;
+        letter-spacing: 0.3px;
+        margin-bottom: 18px;  
+    }
+    .life-comb-freepik {
+        padding-bottom: 0px;
+    }
+    .life-comb-btn {
+        font-size: 9.5px;
+        letter-spacing: 1px;
+        height: 40px;
+    }
+    .life-combination-img-container {
+        background-position: 40% 0%;
+        background-size: 400px;
+        width: 50%;
+        height: 265px;
+    }
+}
+@media screen and (min-width:1024px){
+    .life-combination-content-container h2 {
+        font-size:  33px;
+    }
+    .life-combination-content-container{
+        padding-left: 135px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 12.3px;
+        letter-spacing: 3px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 13px;
+    }
+    .life-comb-btn {
+        font-size: 10.5px;
+        height: 45px;
+    }
+    .life-combination-img-container {
+        background-size: 534px;
+        height: 350px;
+    }
+}
+@media screen and (min-width:1280px){
+    .life-combination-content-container h2 {
+        font-size:  39px;
+        letter-spacing: 0.3px;
+        margin-bottom: 22px;
+    }
+    .life-combination-content-container{
+        padding-left: 200px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 15.3px;
+        margin-bottom: 22px;
+        letter-spacing: 3px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 16px;
+        margin-bottom: 24px;  
+    }
+    .life-comb-btn {
+        font-size: 14.5px;
+        letter-spacing: 1.3px;
+        height: 57px;
+    }
+    .life-combination-img-container {
+        background-position: 47% 0%;
+        background-size: 666px;
+        height: 444px;
+    }
+}
+@media screen and (min-width:1360px){
+    .life-combination-content-container h2 {
+        font-size: 42px;
+        letter-spacing: 0.3px;
+        margin-bottom: 22px;
+    }
+    .life-combination-content-container{
+        padding-left: 200px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 17px;
+        margin-bottom: 25px;
+        letter-spacing: 3px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 17.5px;
+        margin-bottom: 27px;  
+    }
+    .life-comb-btn {
+        height: 64px;
+    }
+    .life-combination-img-container {
+        background-position: 8% 1%;
+        background-size: 689px;
+        height: 470px;
+    }
+}
+@media screen and (min-width:1440px){
+    .life-combination-content-container h2 {
+        font-size: 43px;
+        margin-bottom: 24px;
+    }
+    .life-combination-content-container{
+        padding-left: 200px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 17.5px;
+        letter-spacing: 3px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 19px;
+        margin-bottom: 27px;  
+    }
+    .life-comb-btn {
+        font-size: 14.5px;
+        height: 64px;
+    }
+    .life-combination-img-container {
+        background-position: 81% 1%;
+        background-size: 763px;
+        height: 506px;
+    }
+}
+@media screen and (min-width:1600px){
+    .life-combination-content-container h2 {
+        font-size: 45px;
+    }
+    .life-combination-content-container{
+        padding-left: 240px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 18.5px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 21px;
+    }
+    .life-comb-btn {
+        font-size: 15.5px;
+        height: 64px;
+    }
+    .life-combination-img-container {
+        background-position: 97% 1%;
+        background-size: 818px;
+        height: 544px;
+    }
+}
+@media screen and (min-width:1920px){
+    .life-combination-content-container h2 {
+        font-size: 55px;
+        letter-spacing: 0.3px;
+        margin-bottom: 31px;
+    }
+    .life-combination-content-container{
+        padding-left: 310px;
+    }
+    .life-combination-content-container h3 {
+        font-size: 23px;
+        margin-bottom: 34px;
+        letter-spacing: 3.5px;
+    }
+    .life-combination-content-container h5 {
+        font-size: 24px;
+        letter-spacing: 0.3px;
+        margin-bottom: 33px; 
+    }
+    .life-comb-btn {
+        font-size: 18.5px;
+        letter-spacing: 1.3px;
+        height: 72px;
+        width: 250px;
+    }
+    .life-combination-img-container {
+        background-position: 73% 1%;
+        background-size: 990px;
+        height: 600px;
+    }
+}
+
+/* Second Section */
+.abt-org-pizza-pasta-sec{
+    margin-top: 50px;
+}
+.abt-org-pizza-pasta-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt-org-pizza-pasta-img-text, .abt-org-pizza-pasta-img-text-par{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.abt-org-pizza-pasta-img-text img{
+    width: 70px;
+    margin-bottom: 15px;
+}
+.abt-org-pizza-pasta-img-text-par{
+    width: 300px;
+    height: 180px;
+    border: 2px solid var(--default-orange-red-clr);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+.abt-org-pizza-pasta-img-text p{
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    font-size: 21px;
+    letter-spacing: 1.3px; 
+}
+@media screen and (min-width:414px){
+    .abt-org-pizza-pasta-img-text img{
+        width: 72px;
+        margin-bottom: 17px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 330px;
+        height: 180px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 22px;
+    }
+}
+@media screen and (min-width:600px){
+    .abt-org-pizza-pasta-sec{
+        margin-top: 55px;
+    }
+    .abt-org-pizza-pasta-img-text img{
+        width: 75px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 230px;
+        height: 195px;
+        border-radius: 28px;
+        padding: 15px 0 25px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 23px;
+    }
+    .starting-box{
+        margin-right: 25px;
+    }
+}
+@media screen and (min-width:768px){
+    .abt-org-pizza-pasta-img-text img{
+        width: 60px;
+        margin-bottom: 15px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 153px;
+        height: 165px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 19px;
+    }
+    .starting-box, .second-box{
+        margin-right: 25px;
+    }
+}
+@media screen and (min-width:1024px){
+    .abt-org-pizza-pasta-sec{
+        margin-top: 55px;
+    }
+    .abt-org-pizza-pasta-img-text img{
+        width: 65px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 195px;
+        height: 150px;
+        padding: 22px 0 31px;
+        margin-bottom: 25px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1280px){
+    .abt-org-pizza-pasta-sec{
+        margin-top: 70px;
+    }
+    .abt-org-pizza-pasta-img-text img{
+        width: 70px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 240px;
+        height: 200px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 22px;
+    }
+}
+@media screen and (min-width:1360px){
+    .abt-org-pizza-pasta-img-text img{
+        width: 75px;
+        margin-bottom: 17px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 260px;
+        height: 230px;
+        border-radius: 30px;
+        padding: 20px 0 33px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 24px;
+        letter-spacing: 1.1px; 
+    }
+}
+@media screen and (min-width:1440px){
+    .abt-org-pizza-pasta-sec{
+        margin-top: 70px;
+    }
+    .abt-org-pizza-pasta-img-text img{
+        width: 80px;
+        margin-bottom: 18px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 260px;
+        height: 240px;
+        border-radius: 30px;
+        padding: 20px 0 33px;
+        margin-bottom: 25px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 25px;
+     }
+    .starting-box, .second-box{
+        margin-right: 28px;
+    }
+}
+@media screen and (min-width:1600px){
+    .abt-org-pizza-pasta-sec{
+        margin-top: 75px;
+    }
+    .abt-org-pizza-pasta-img-text img{
+        width: 85px;
+        margin-bottom: 20px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 270px;
+        height: 260px;
+        border-radius: 30px;
+        padding: 25px 0 38px;
+        margin-bottom: 25px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        font-size: 27px;
+    }
+    .starting-box, .second-box{
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width:1920px){
+    .abt-org-pizza-pasta-sec{
+        margin-top: 80px;
+    }
+    .abt-org-pizza-pasta-wraper{
+        width: 100%;
+    }
+    .abt-org-pizza-pasta-img-text img{
+        width: 85px;
+        margin-bottom: 20px;
+    }
+    .abt-org-pizza-pasta-img-text-par{
+        width: 287px;
+        height: 267px;
+        border-radius: 30px;
+        padding: 28px 0 40px;
+        margin-bottom: 28px;
+    }
+    .abt-org-pizza-pasta-img-text p{
+        margin-bottom: 0;
+        font-size: 29px;
+        letter-spacing: 1.1px; 
+    }
+    .starting-box, .second-box{
+        margin-right: 33px;
+    }
+}
+
+/* Third Section - john pizzeria shop section */
+
+.john-pizzeria-shop-content-container, .john-pizzeria-shop-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.john-pizzeria-shop-img-container img{
+    width: 100%;
+    object-fit: cover;
+ }
+.john-pizzeria-shop-menu-btn {
+    font-family: var(--default-font-family);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--default-black-clr);
+    background-color: var(--default-white-clr);
+    border: 2px solid var(--default-orange-red-clr);
+    border-radius: 29px;
+    width: 180px;
+    height: 57px;
+    margin-bottom: 20px;
+}
+.john-pizzeria-shop-menu-btn:hover{
+    background-color: var(--default-black-clr);
+    color: var(--default-white-clr);
+    border: none;
+}
+.john-ul{
+    list-style-position: inside;
+    padding-left: 0;
+}
+.john-li{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.list-par {
+    width: 56%;
+    margin: 0 22% 0 22%;
+}
+ .john-pizzeria-shop-content-container{
+    margin-top: 34px;
+ }
+.john-pizzeria-shop-content-container h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-black-clr);
+    font-weight: bold;
+    font-size: 15.6px;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+.john-pizzeria-shop-content-container h4 {
+    color: var(--default-black-clr);
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 18px;
+}
+.john-pizzeria-shop-content-container p {
+    color: var(--default-black-clr);
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;    
+}
+.john-pizzeria-shop-content-container h5 {
+    color: var(--default-black-clr);
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    margin-bottom: 22px;
+}
+.john-pizzeria-shop-freepik {
+    color: var(--default-black-clr);
+    text-decoration: none;
+    border-bottom: 1px solid var(--default-black-clr);
+    padding-bottom: 2px;
+}
+.john-pizzeria-shop-freepik:hover{
+    border-color: var(--default-orange-red-clr);
+}
+
+@media screen and (min-width:414px){
+     .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 17.6px;
+        letter-spacing: 2.5px;
+        margin-bottom: 18px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 26px;
+        letter-spacing: 0.3px;
+        margin-bottom: 18px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 18px;
+        letter-spacing: 0.3px;
+        margin-bottom: 12px;    
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        margin-bottom: 22px;
+    }
+    .john-pizzeria-shop-freepik {
+        padding-bottom: 2px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 13px;
+        letter-spacing: 1px;
+        border-radius: 29px;
+        width: 180px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .john-li{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .list-par {
+        width: 47%;
+        margin: 0 23% 0 30%;
+    }
+}
+
+@media screen and (min-width:600px){
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 19.6px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 31px;
+        margin-bottom: 20px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 19.5px;
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 19px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 14px;
+        width: 200px;
+        height: 61px;
+    }
+    .john-li{
+        font-size: 20px;
+    }
+        /* .list-par {
+            width: 368px;
+        } */
+}
+@media screen and (min-width:768px){
+     .john-pizzeria-shop-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+     }
+    .john-pizzeria-shop-wraper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+     }
+    .john-pizzeria-shop-img-container{
+        width: 50%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 307px;
+        object-fit: cover;
+     }
+    .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 14.6px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 23px;
+        letter-spacing: 0.3px;
+        margin-bottom: 7px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 11px;
+        letter-spacing: 0.2px;
+        margin-bottom: 7px;   
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 14px;
+        letter-spacing: normal;
+        margin-bottom: 14px;
+    }
+    .john-pizzeria-shop-freepik {
+        padding-bottom: 2px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 11px;
+        letter-spacing: 1px;
+        border-radius: 28px;
+        width: 150px;
+        height: 48px;
+        margin-bottom: 15px;
+    }
+    .john-li{
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+    .list-par {
+        width:  50%;
+        margin: 0 25% 0 35%;
+    }
+}
+@media screen and (min-width:1024px){
+    .john-pizzeria-shop-wraper{
+        width: 95%;
+        margin-top: 20px;
+     }
+    .john-pizzeria-shop-img-container{
+        width: 50%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 420px;
+     }
+    .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 16.4px;
+        letter-spacing: 2.8px;
+        margin-bottom: 8px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 27px;
+        letter-spacing: 0.3px;
+        margin-bottom: 12px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        margin-bottom: 13px;   
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+        border-radius: 26px;
+        width: 167px;
+        height: 51px;
+        margin-bottom: 15px;
+    }
+    .john-li{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
+    .list-par {
+        width: 50%;
+        margin: 0 23% 0 37%;
+    }
+}
+@media screen and (min-width:1280px){
+    .john-pizzeria-shop-wraper{
+        width: 95%;
+        margin-top: 25px;
+     }
+    .john-pizzeria-shop-img-container{
+        width: 50%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 500px;
+     }
+    .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 16.4px;
+        letter-spacing: 3.8px;
+        margin-bottom: 18px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 31px;
+        letter-spacing: 0.3px;
+        margin-bottom: 15px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 17px;
+        letter-spacing: 0.3px;
+        margin-bottom: 18px;  
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        border-radius: 29px;
+        width: 202px;
+        height: 57px;
+        margin-bottom: 20px;
+    }
+    .john-li{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .list-par {
+        margin: 0 23% 0 37%;
+    }
+}
+@media screen and (min-width:1360px){
+    .john-pizzeria-shop-wraper{
+        width: 100%;
+        margin-top: 40px;
+     }
+    .john-pizzeria-shop-img-container{
+        width: 50%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 530px;
+     }
+    .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 17px;
+        letter-spacing: 4.8px;
+        margin-bottom: 23px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 47px;
+        letter-spacing: 0.4px;
+        margin-bottom: 19px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 19px;
+        letter-spacing: 0.2px;
+        line-height: 30px;
+        margin-bottom: 22px;  
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        border-radius: 33px;
+        width: 219px;
+        height: 62px;
+        margin-bottom: 23px;
+    }
+    .john-li{
+        font-size: 19px;
+        margin-bottom: 6px;
+    }
+}
+@media screen and (min-width:1440px){
+    .john-pizzeria-shop-wraper{
+        width: 89%;
+     }
+    .john-pizzeria-shop-img-container{
+        width: 50%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 550px;
+     }
+    .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 17px;
+        letter-spacing: 5.2px;
+        margin-bottom: 19px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 45px;
+        letter-spacing: 0.4px;
+        margin-bottom: 22px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 19.5px;
+        letter-spacing: 0.2px;
+        line-height: 30px;
+        margin-bottom: 22px;  
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 19px;
+        margin-bottom: 28px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+        border-radius: 34px;
+        width: 228px;
+        height: 66px;
+        margin-bottom: 23px;
+    }
+    .john-ul {
+        margin-bottom: 29px;
+    }
+    .john-li{
+        font-size: 21px;
+        margin-bottom: 3px;
+    }
+}
+@media screen and (min-width:1600px){
+    .john-pizzeria-shop-wraper{
+        width: 92%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 555px;
+     }
+}
+@media screen and (min-width:1920px){
+    .john-pizzeria-shop-wraper{
+        width: 100%;
+     }
+    .john-pizzeria-shop-img-container img{
+        width: 100%;
+        height: 622px;
+     }
+    .john-pizzeria-shop-content-container{
+        margin-top: 37px;
+     }
+    .john-pizzeria-shop-content-container h3 {
+        font-size: 21px;
+        letter-spacing: 6.2px;
+        margin-bottom: 20px;
+    }
+    .john-pizzeria-shop-content-container h4 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .john-pizzeria-shop-content-container p {
+        font-size: 22.5px;
+        letter-spacing: 0.2px;
+        line-height: 36px;
+        margin-bottom: 11px;  
+    }
+    .john-pizzeria-shop-content-container h5 {
+        font-size: 22px;
+        margin-bottom: 34px;
+    }
+    .john-pizzeria-shop-menu-btn {
+        font-size: 16px;
+        letter-spacing: 2px;
+        border-radius: 38px;
+        width: 244px;
+        height: 74px;
+        margin-bottom: 27px;    
+    }
+    .john-ul {
+        margin-bottom: 29px;
+    }
+    .john-li{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Italy Pizza Menu Section */
+.italy-pizza-menu-container{
+    margin-top: 60px;
+    background-color: var(--default-black-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    padding-bottom: 0;
+} 
+.italy-pizza-menu-container h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-white-clr);
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    margin: 50px 0 45px;
+}
+.italy-pizza-menu-img-text {
+    background-color: var(--default-white-clr);
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 36px 0 10px 0;;
+}
+.italy-pizza-menu-img-text img {
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+}
+.italy-pizza-menu-wraper {
+    display: flex;
+    justify-content: center;
+}
+.italy-pizza-menu-img-text h3{
+    font-size: 25px;
+    align-self: flex-start;
+    margin: 15px 23px;
+}
+.italy-pizza-menu-img-text p{
+    font-size: 17px;
+    align-self: flex-start;
+    margin: 0 0 15px 23px;
+}
+.italy-pizza-menu-container h5{
+    font-family: var(--default-font-family);
+    color: var(--default-white-clr);
+    font-weight: 100;
+    font-size: 17.5px;
+    letter-spacing: 0.3px;
+    margin: 14px 0 60px;
+}
+.italy-pizza-menu-freepik{
+    font-family: var(--default-font-family);
+    color: var(--default-white-clr);
+    font-weight: 100;
+    font-size: 17.5px;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--default-white-clr);
+}
+.italy-pizza-menu-freepik:hover{
+    border-color: var(--default-orange-red-clr);
+}
+@media screen and (min-width:414px){
+    .italy-pizza-menu-container h2 {
+        font-size: 33px;
+        letter-spacing: 0.7px;
+        margin: 50px 0 50px;
+    }
+    .italy-pizza-menu-img-text {
+        width: 83%;
+        margin-bottom: 20px;
+        padding: 28px 0 10px 0;
+    }
+    .italy-pizza-menu-img-text img {
+        width: 83%;
+        height: auto;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 25px;
+        margin: 11px 26px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 19.5px;
+        margin: 0 0 17px 26px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 20.5px;
+        letter-spacing: 0.3px;
+        margin: 18px 0 64px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 20.5px;
+    }
+}
+@media screen and (min-width:600px){
+    .italy-pizza-menu-container{
+        margin-top: 65px;
+        padding-bottom: 0;
+    } 
+    .italy-pizza-menu-container h2 {
+        font-size: 33px;
+        letter-spacing: 0.7px;
+        margin: 50px 0 50px;
+    }
+    .italy-pizza-menu-img-text {
+        width: 63%;
+        margin-bottom: 20px;
+        padding: 27px 0 10px 0;
+    }
+    .italy-pizza-menu-img-text img {
+        width: 86%;
+        height: 275px;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 26px;
+        margin: 15px 25px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 19.5px;
+        margin: 0 0 21px 25px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 20.5px;
+        letter-spacing: 0.3px;
+        margin: 18px 0 64px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 20.5px;
+    }
+    /* .show-for-small-only, .hide-for-small-only, .show-for-both{
+        display: none;
+    } 
+    #break-in-ls-mobile{
+        display: block;
+    } */
+}
+@media screen and (min-width:768px){
+    .italy-pizza-menu-container{
+        margin-top: 60px;
+    } 
+    .italy-pizza-menu-wraper{
+        width: 90%;
+    }
+    .italy-pizza-menu-container h2 {
+        font-size: 52px;
+        margin: 48px 0;
+    }
+    .italy-pizza-menu-img-text {
+        width: 48%;
+        margin:0 0 20px 0;
+        padding: 25px 0 0 0;
+    }
+    .odd-col-style{
+        margin-right: 20px;
+    }
+    .italy-pizza-menu-img-text img {
+        width: 85%;
+        height: auto;
+        align-content:center;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        margin: 12px 28px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 17.3px;
+        margin: 0 0 23px 28px;
+        min-height: 63.5px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 18.5px;
+        margin: 14px 0 60px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 18.5px;
+    }
+    /* #break-in-ls-mobile, .show-for-small-only{
+        display: none !important;
+    }
+    .hide-for-small-only{
+        display: block;
+    } */
+}
+
+@media screen and (min-width:1024px){
+    .italy-pizza-menu-container{
+        margin-top: 70px;
+    } 
+    .italy-pizza-menu-wraper{
+        width: 95%;
+        align-items: center;
+    }
+    .italy-pizza-menu-container h2 {
+        font-size: 57px;
+        margin: 75px 0 45px 0;
+    }
+    .odd-col-style{
+        margin-right: 0;
+    }
+    .italy-pizza-menu-img-text {
+        width: 31%;
+        /* min-height: 428px; */
+        margin:0 0 20px 0;
+        padding: 26px 0 23px 0;
+    }
+    .last-box{
+        margin-right: 20px;
+    }   
+    .italy-pizza-menu-img-text img {
+        width: 82%;
+        height: 205px;  
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 20px;
+        margin: 13px 27px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 15.5px;
+        margin: 0 0 0 28px;
+        min-height: 92.5px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 18.5px;
+        margin: 23px 0 76px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 18.5px;
+    }
+    /* .show-for-both, .hide-for-small-only{
+        display: none !important;
+    }
+    .italy-pizza-menu-img-text #break-from-lap{
+        display: block !important;
+    } */
+}
+
+@media screen and (min-width:1280px){
+    .italy-pizza-menu-container{
+        margin-top: 90px;
+    }
+    .italy-pizza-menu-container h2 {
+        font-size: 57px;
+        margin: 75px 0 45px 0;
+    }
+    .italy-pizza-menu-img-text {
+        width: 29%;
+        margin-bottom: 20px;
+        padding: 26px 0 23px 0;
+    }
+    .last-box{
+        margin-right: 20px;
+    }   
+    .italy-pizza-menu-img-text img {
+        width: 82%;
+        height: 236px;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 24px;
+        margin: 9px 31px
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 18.5px;
+        margin: 0 0 0 30px;
+        min-height: 116.5px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 18.5px;
+        margin: 23px 0 76px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 18.5px;
+    }
+}
+@media screen and (min-width:1440px){
+    .italy-pizza-menu-container h2 {
+        font-size: 60px;
+        margin: 75px 0 45px 0;
+    }
+    .italy-pizza-menu-img-text {
+        width: 26%;
+        margin-bottom: 20px;
+        padding: 26px 0 12px 0;
+    }
+    .last-box{
+        margin-right: 25px;
+    }   
+    .italy-pizza-menu-img-text img {
+        width: 82%;
+        height: 240px;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 23px;
+        margin: 14px 31px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 18.5px;
+        margin: 0 0 0 30px;
+        min-height: 121.5px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 19.5px;
+        margin: 23px 0 76px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 19.5px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .italy-pizza-menu-container{
+        margin-top: 100px;
+    } 
+    .italy-pizza-menu-container h2 {
+        font-size: 78px;
+        letter-spacing: 0.8px;
+        margin: 84px 0 62px 0;
+    }
+    .italy-pizza-menu-img-text {
+        width: 26%;
+        margin-bottom: 25px;
+        padding: 39px 0 32px 0;
+    }
+    .italy-pizza-menu-img-text img {
+        width: 84%;
+        height: 316px;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 25px;
+        margin: 18px 35px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 20px;
+        margin: 0 0 0 35px;
+        min-height: 137.5px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 25.5px;
+        margin: 31px 0 85px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 25.5px;
+    }
+}
+
+@media screen and (min-width:1920px){
+    .italy-pizza-menu-container h2 {
+        font-size: 80px;
+    }
+    .italy-pizza-menu-img-text {
+        width: 26%;
+    }
+    .italy-pizza-menu-img-text img {
+        width: 85%;
+        height: 323px;
+    }
+    .italy-pizza-menu-img-text h3{
+        font-size: 31px;
+        margin: 18px 35px;
+    }
+    .italy-pizza-menu-img-text p{
+        font-size: 24px;
+        margin: 0 0 0 35px;
+        min-height: 137.5px;
+    }
+    .italy-pizza-menu-container h5{
+        font-size: 26.5px;
+        margin: 31px 0 85px;
+    }
+    .italy-pizza-menu-freepik{
+        font-size: 26.5px;
+    }
+}
+
+/* fifth section */
+.italy-tasty-foods-sec{
+    margin-top: 70px;
+}
+.italy-tasty-foods-container, .italy-tasty-foods-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.italy-tasty-foods-wraper{
+    width: 85%;
+}
+.italy-food-accordion-parent h2{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-black-clr);
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 0.7px;
+}
+.italy-food-img-parent{
+    margin-bottom: 15px;
+}
+.italy-food-img-parent img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+.italy-food-img, .italy-food-imgs-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.custom-acc-head{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #808080 !important;
+    font-weight: bold;
+    font-size: 16px;
+    border-color: #808080 !important;
+    background-color: none !important;
+    border-color: none !important;
+    padding-bottom:0;
+}
+.accordion-button{
+    /* background: none !important; */
+    /* border: none !important; */
+}
+/* .accordion-button:focus{
+    border: none !important;
+} */
+.custom-acc-body{
+    padding: 16px 0 16px 15px;
+}
+.custom-acc-head:hover, .custom-acc-head:focus{
+    color: var(--default-black-clr) !important;
+    background: none !important;
+    font-weight: bold;
+}
+.custom-acc-list-par{
+    list-style-type: "-";
+    padding-left: 0px;
+}
+.italy-food-li-points {
+    font-size: 14.5px;
+    padding-left: 6px;
+}
+.italy-tasty-foods-container h5{
+    color: #808080;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 40px 0;
+}
+.italy-tasty-foods-container a{
+    color: #808080;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid #808080;
+}
+.italy-food-freepik:hover{
+    border-color: var(--default-orange-red-clr);
+    cursor: pointer;
+}
+#custom-acc-body-lastone{
+    width: 100%; 
+    min-height: 100px;
+}
+/* .accordion-button::after{
+    color: #808080 !important;
+} */
+@media screen and (min-width:600px){
+    .italy-tasty-foods-sec{
+        margin-top: 70px;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 35px;
+        letter-spacing: 0.7px;
+    }
+    .italy-food-img-parent{
+        margin-bottom: 17px;
+    }
+    .italy-food-img-parent img{
+        height: 390px;
+    }
+    .custom-acc-head{
+        font-size: 17px;
+        padding-bottom:0;
+    }
+    .custom-acc-body{
+        padding: 16px 0 16px 15px;
+    }
+    .custom-acc-list-par{
+        padding-left: 0px;
+    }
+    .italy-food-li-points {
+        font-size: 17.5px;
+        padding-left: 6px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 20px;
+        margin: 46px 0 50px;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 20px;
+    }
+    #custom-acc-body-lastone{
+        width: 100%; 
+        min-height: 100px;
+    }
+}
+@media screen and (min-width:768px){
+    .italy-tasty-foods-sec{
+        margin-top: 60px;
+    }
+    .italy-tasty-foods-container{
+        width: 100%;
+    }
+    .italy-tasty-foods-wraper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .italy-food-accordion-parent{
+        padding-right: 30px;
+        /* margin-right: 20px; */
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 32px;
+        letter-spacing: 0.4px;
+    }
+    .italy-food-imgs-wraper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .italy-food-img{
+        width: 100% !important;
+    }
+    .italy-food-img-parent{
+        width: 48%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+    .italyfood-firstimg-of-pair{
+        margin: 0 12px 12px 0;
+    }
+    .italy-food-img-parent img{
+        height: 160px;
+        width: 100%;
+    }
+    .custom-acc-head{
+        font-size: 13px;
+        padding-bottom:0;
+    }
+    .custom-acc-body{
+        padding: 0px 0 16px 15px;
+    }
+    .custom-acc-list-par{
+        padding-left: 12px;
+    }
+    .italy-food-li-points {
+        font-size: 10.2px;
+        padding-left: 6px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 15px;
+        margin: 25px 0 50px;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 15px;
+    }
+    #custom-acc-body-lastone{
+        width: 100%; 
+        min-height: 100px;
+    }
+    /* .custom-acc-head:focus{
+        .italy-food-img-parent img{
+            height: 500px !important;
+        }
+    } */
+}
+@media screen and (min-width:1024px){
+    .italy-tasty-foods-sec{
+        margin-top: 60px;
+    }
+    .italy-tasty-foods-wraper{
+        width: 90%;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 33px;
+        letter-spacing: 0.7px;
+    }
+    .italy-food-imgs-wraper{
+        width: 100%;
+    }
+    .italy-food-img-parent{
+        width: 46%;
+        margin: 0 12px 12px 0;
+    }
+    .italy-food-img-parent img{
+        height: 220px;
+        width: 100%;
+    }
+    .custom-acc-head{
+        font-size: 17px;
+        padding-bottom:8px;
+    }
+    .custom-acc-body{
+        padding: 16px 0 16px 28px;
+    }
+    .custom-acc-list-par{
+        padding-left: 0px;
+    }
+    .italy-food-li-points {
+        font-size: 13.2px;
+        padding-left: 9px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 18px;
+        margin: 46px 0 0;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 18px;
+    }
+    #custom-acc-body-lastone{
+        width: 100%; 
+        min-height: 120px;
+    }
+    /* .increase-img-height{
+        height: 300px;
+    } */
+}
+@media screen and (min-width:1280px){
+    .italy-tasty-foods-sec{
+        margin-top: 65px;
+    }
+    .italy-tasty-foods-wraper{
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .accordion-button:hover {
+        border: none !important;
+        border-color: none !important;
+    } */
+    .italy-food-accordion-parent{
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 41px;
+        letter-spacing: 0.7px;
+    }
+    .italy-food-imgs-wraper{
+        width: 100%;
+    }
+    .italy-food-img{
+        width: 100% !important;
+    }
+    .italy-food-img-parent{
+        width: 47%;
+        margin: 0 12px 12px 0;
+    }
+    .italy-food-img-parent img{
+        height: 260px;
+        width: 100%;
+    }
+    .custom-acc-head{
+        font-size: 17px;
+        padding: 27px 32px 27px;
+        margin-bottom: 0 !important;
+    }
+    .custom-acc-body{
+        padding: 16px 0 16px 38px;
+    }
+    .custom-acc-list-par{
+        padding-left: 0px;
+    }
+    .italy-food-li-points {
+        font-size: 13.5px;
+        padding-left: 10px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 18px;
+        margin: 26px 0 0;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1360px){
+    .italy-tasty-foods-sec{
+        margin-top: 65px;
+    }
+    .italy-tasty-foods-wraper{
+        width: 100%;
+    }
+    .italy-food-accordion-parent{
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 43px;
+        letter-spacing: 0.7px;
+    }
+    .italy-food-imgs-wraper{
+        width: 100%;
+    }
+    .italy-food-img{
+        width: 100% !important;
+    }
+    .italy-food-img-parent{
+        width: 47%;
+        margin: 0 12px 12px 0;
+    }
+    .italy-food-img-parent img{
+        height: 300px;
+        width: 100%;
+    }
+    .custom-acc-head{
+        font-size: 17px;
+        padding: 27px 32px 27px;
+        margin-bottom: 0 !important;
+    }
+    .custom-acc-body{
+        padding: 16px 0 16px 38px;
+    }
+    .italy-food-li-points {
+        font-size: 14.5px;
+        padding-left: 10px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 19px;
+        margin: 26px 0 0px;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width:1440px){
+    .italy-tasty-foods-sec{
+        margin-top: 70px;
+    }
+    .italy-tasty-foods-wraper{
+        width: 90%;
+    }
+    .italy-food-accordion-parent{
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 49px;
+        letter-spacing: 0.7px;
+    }
+    .italy-food-imgs-wraper{
+        width: 94%;
+    }
+    .italy-food-img{
+        width: 100% !important;
+    }
+    .italy-food-img-parent{
+        width: 46%;
+        margin: 0px 15px 15px 0;
+    }
+    .italy-food-img-parent img{
+        height: 315px;
+        width: 100%;
+    }
+    .custom-acc-head{
+        font-size: 18px;
+        padding: 24px 22px 24px 27px;
+        margin-bottom: 0 !important;
+    }
+    .custom-acc-body{
+        padding: 16px 0 16px 38px;
+    }
+    .italy-food-li-points {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 19.5px;
+        margin: 26px 0 0px;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 19.5px;
+    }
+}
+@media screen and (min-width:1600px){
+    .italy-tasty-foods-sec{
+        margin-top: 75px;
+    }
+    .italy-tasty-foods-wraper{
+        width: 95%;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 50px;
+        letter-spacing: 0.7px;
+    }
+    .italy-food-imgs-wraper{
+        width: 94%;
+    }
+    .italy-food-img-parent img{
+        height: 300px;
+        width: 100%;
+    }
+    .custom-acc-head{
+        font-size: 19px;
+        padding: 30px 22px 30px 27px;
+    }
+    /* .accordion-button{
+        border-bottom: 0.1px solid #808080 !important;
+    } */
+    .custom-acc-body{
+        padding: 16px 0 16px 38px;
+    }
+    .italy-food-li-points {
+        font-size: 17px;
+        padding-left: 10px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 21px;
+        margin: 26px 0 0px;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 21px;
+    }
+}
+@media screen and (min-width:1920px){
+    .italy-tasty-foods-sec{
+        margin-top: 75px;
+        width: 100% ;
+    }
+    .italy-tasty-foods-container{
+        width: 100%;
+    }
+    /* ok */
+    .italy-tasty-foods-wraper{
+        width: 100% ;
+    }
+    /*  */
+    .italy-food-accordion-parent{
+        padding-right: 39px;
+        margin-right: 108px;
+    }
+    .italy-food-accordion-parent h2{
+        font-size: 56px;
+        letter-spacing: 0.7px;
+        margin-right: -2px;
+        padding-right: 0px;
+    }
+    .italy-food-imgs-wraper{
+        width: 115%;
+    }
+    /*  */
+    .italy-food-img{
+        width: 100% !important;
+    }
+    /*  */
+    .italy-food-img-parent{
+        width: 46%;
+        margin: 0px 20px 20px 0;
+    }
+    /* ok */
+    .italy-food-img-parent img{
+        height: 378px;
+    }
+    .custom-acc-head{
+        font-size: 22px;
+        padding: 40px 22px 40px 45px;
+    }
+    /* .accordion-button{
+        border-bottom: 0.1px solid #808080 !important;
+    } */
+    .custom-acc-body{
+        padding:22px;
+        padding: 40px 0px 40px 0px;;
+    }
+    .italy-food-li-points {
+        font-size: 19px;
+        padding-left: 10px;
+    }
+    .italy-tasty-foods-container h5{
+        font-size: 25px;
+        margin: 26px 0 0px;
+    }
+    .italy-tasty-foods-container a{
+        font-size: 25px;
+    }
+}
+
+/* Sixth Section */
+.pizza-special-pizza-sec{
+    margin-top: 50px;
+}
+.pizza-special-pizza-container{
+    background-image: url("../images/sixth-section-pizza-with-board-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: 45% 11%;
+    background-size: 2650px;
+    width: 100%;
+    height: 1335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pizza-special-pizza-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 0 !important;
+    padding-top: 15px !important;
+}
+.pizza-new-york-container {
+    background-color:rgb(0 0 0 / 64%);
+    height: 605px;
+    padding-left: 20px;
+}
+.pizza-new-york-container h2{
+    color: var(--default-white-clr);
+    font-weight: 700;
+    font-size: 25px;
+    /* padding: 40px 0; */
+}
+.pizza-new-york-container h3{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-white-clr);
+    font-weight: bold;
+    font-size: 19px;
+}
+.pizza-new-york-container h4{
+    color: var(--default-white-clr);
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    /* font-size: 21.48px; */
+}
+.pizza-new-york-container p{
+    color: var(--default-white-clr);
+    font-size: 15px;
+}
+.new-york-dollar{
+    color: var(--default-white-clr);
+    font-weight: bold;
+    font-style: italic;
+ }
+.pizza-new-york-container h5{
+    font-family: var(--default-font-family);
+    color: #808080;
+    font-weight: 100;
+    font-size: 15.6px;
+    letter-spacing: 0.3px;
+}
+.new-york-pizza-freepik {
+    color: #808080;
+    font-size: 15.6px;
+    text-decoration: none;
+    border-bottom: 1px solid #808080;
+}
+.new-york-pizza-freepik:hover{
+    border-color: var(--default-orange-red-clr);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px){
+    .pizza-special-pizza-sec{
+        margin-top: 70px;
+    }
+    .pizza-special-pizza-container{
+        background-position: 38% 11%;
+        background-size: 1534px;
+        height: 702px;
+    }
+    .pizza-new-york-container {
+        min-height: 580px;
+        padding: 20px 0 0 20px;
+    }
+    .italy-pizza-menu-wraper {
+        width: 90%;
+    }
+    .pizza-n-y-first-cont{
+        margin-right: 25px !important;
+    }
+    .pizza-new-york-container h2{
+        font-size: 36px;
+    }
+    .pizza-new-york-container h3{
+        font-size: 18px;
+    }
+    .pizza-new-york-container h4{
+        letter-spacing: 0.3px;
+    }
+    .pizza-new-york-container p, .new-york-dollar{
+        font-size: 18px;
+    }
+    .pizza-new-york-container h5{
+        font-size: 14.6px;
+        letter-spacing: 0.3px;
+    }
+    .new-york-pizza-freepik {
+        font-size: 14.6px;
+    }
+}
+@media screen and (min-width:1024px){
+    .pizza-special-pizza-sec{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .pizza-special-pizza-container{
+        background-position: 38% 11%;
+        background-size: 1656px;
+        height: 795px;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .pizza-new-york-container {
+        min-height: 695px;
+        padding: 20px 0 0 25px;
+    }
+    .pizza-special-pizza-wraper{
+        width: 95%;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .pizza-n-y-first-cont{
+        margin-right: 30px !important;
+    }
+    .pizza-new-york-container h2{
+        font-size: 43px;
+    }
+    .pizza-new-york-container h3{
+        font-size: 20px;
+    }
+    .pizza-new-york-container p, .new-york-dollar{
+        font-size: 17px;
+    }
+    .pizza-new-york-container h5{
+        font-size: 17.6px;
+        letter-spacing: 0.3px;
+    }
+    .new-york-pizza-freepik {
+        font-size: 17.6px;
+    }
+}
+
+@media screen and (min-width:1360px){
+    .pizza-special-pizza-container{
+        background-position: 41% 11%;
+        background-size: 1657px;
+        height: 840px;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .pizza-new-york-container {
+        min-height: 730px;
+        padding: 20px 0 0 25px;
+    }
+    .pizza-special-pizza-wraper{
+        width: 90%;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .pizza-n-y-first-cont{
+        margin-right: 30px !important;
+    }
+    .pizza-new-york-container h2{
+        font-size: 47.5px;
+    }
+    .pizza-new-york-container h3{
+        font-size: 25px;
+    }
+    .pizza-new-york-container p, .new-york-dollar{
+        font-size: 19.5px;
+    }
+    .pizza-new-york-container h5{
+        font-size: 18px;
+        letter-spacing: 0.3px;
+    }
+    .new-york-pizza-freepik {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .pizza-special-pizza-container{
+        background-position: 49% 2%;
+        background-size: 2094px;
+        height: 883px;
+        padding-top: 20px;
+    }
+    .pizza-new-york-container {
+        min-height: 730px;
+        padding: 20px 0 0 25px;
+    }
+    .pizza-special-pizza-wraper{
+        width: 90%;
+    }
+    .pizza-n-y-first-cont{
+        margin-right: 35px !important;
+    }
+    .pizza-new-york-container h2{
+        font-size: 48.5px;
+    }
+    .pizza-new-york-container h3{
+        font-size: 23px;
+    }
+    .pizza-new-york-container p, .new-york-dollar{
+        font-size: 21.5px;
+    }
+    .pizza-new-york-container h5{
+        font-size: 20px;
+        letter-spacing: 0.3px;
+    }
+    .new-york-pizza-freepik {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1920px){
+    .pizza-special-pizza-sec{
+        margin-top: 70px;
+    }
+    .pizza-special-pizza-container{
+        background-position: 100% 11%;
+        background-size: 2057px;
+        min-width: 100%;
+        height: 970px;
+    }
+    .pizza-new-york-container {
+        min-height: 828px;
+        padding: 20px 0 0 25px;
+    }
+    .pizza-special-pizza-wraper{
+        width: 85%;
+        padding-top: 20px !important;
+    }
+    .pizza-n-y-first-cont{
+        margin-right: 40px !important;
+    }
+    .pizza-new-york-container h2{
+        font-size: 52.5px;
+    }
+    .pizza-new-york-container h3{
+        font-size: 26px;
+    }
+    .pizza-new-york-container h4{
+        letter-spacing: 0.3px;
+        /* font-size: 21.48px; */
+    }
+    .pizza-new-york-container p, .new-york-dollar{
+        font-size: 23.5px;
+    }
+    .pizza-new-york-container h5{
+        font-size: 23px;
+        letter-spacing: 0.3px;
+    }
+    .new-york-pizza-freepik {
+        font-size: 23px;
+    }
+}
+/* Seventh Section */
+
+.slider-pizza-container{
+    margin-top: 50px;
+}
+.slider-pizza-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.slider-pizza-wraper{
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.slider-pizza-imgs {
+    width: 300px;
+    height: 322px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.slider-pizza-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-pizza-heading h2{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-black-clr);
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 0.7px;
+}
+.slider-pizza-heading p{
+    color: var(--default-black-clr);
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+
+/* .slider-pizza-container{
+    margin-top: 50px;
+}
+.slider-pizza-imgs {
+    width: 100%;
+    height: 322px;
+    margin-bottom: 10px;
+}
+.slider-pizza-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-pizza-heading h2{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-black-clr);
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 0.7px;
+}
+.slider-pizza-heading p{
+    color: var(--default-black-clr);
+    font-size: 17px;
+    letter-spacing: normal;
+} */
+
+
+/* Eighth Section - Contact Details */
+
+.contact-details-container{
+    margin-top: 50px;
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/eight-sec-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-details-wraper {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.text-container{
+    background-color: var(--default-white-clr);
+}
+.text-container h3{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--default-black-clr);
+    font-weight: 800;
+    font-size: 19px;
+    letter-spacing: 0.2px;
+}
+.text-container p{
+    color: var(--default-black-clr);
+    /* font-size: 15px; */
+}
+.text-container a{
+    color: var(--default-orange-red-clr);
+    font-weight: bold;
+    text-decoration: none;
+    /* border-bottom: 1px solid var(--default-orange-red-clr); */
+}
+.text-container a:hover{
+    color: var(--default-black-clr) !important; 
+    border-color: var(--default-black-clr) !important;   
+}
+.contact-details-container h5{
+    color: var(--default-white-clr);
+    font-weight: normal;
+    font-size: 18px;
+}
+.contact-details-freepik:hover{
+    /* color: rgba(0,0,0,0.3), rgba(0,0,0,0.3);
+    border-color: rgba(0,0,0,0.3), rgba(0,0,0,0.3); */
+    cursor: pointer;
+}
+
+@media screen and (min-width:414px) {
+    .text-container{
+        min-height: 130px;
+    }
+    .text-container h3{
+        font-size: 19.5px;
+    }
+    .text-container p{
+        font-size: 17px;
+    }
+    .contact-details-container h5{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:600px) {
+    .contact-details-container{
+        margin-top: 60px;
+    }
+    .contact-details-wraper{
+        width: 100%;
+    }
+    .text-container h3{
+        font-size: 20px;
+    }
+    .text-container p{
+        font-size: 18px;
+    }
+    .contact-details-container h5{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width:768px) {
+    .contact-details-container{
+        margin-top: 60px;
+        background-position: 52% 100%;
+        background-size: 1014px;
+        height: 378px;
+        padding-top: 21px;
+    }
+    .text-container h3{
+        font-size: 20px;
+    }
+    .text-container p{
+        font-size: 18px;
+    }
+    .contact-details-container h5{
+        font-size: 19px;
+    }
+    .text-cont-first-pair{
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .contact-details-container{
+        margin-top: 35px;
+        background-position: 58% 61%;
+        background-size: 1112px;
+        min-height: 200px;
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-details-wraper{
+        width: 85%;
+    }
+    .text-container {
+        min-height: 205px;
+        padding-top: 8px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .contact-details-container{
+        margin-top: 35px;
+        background-position: 58% 46%;
+        background-size: 1349px;
+        min-height: 479px;
+        padding-top: 74px;
+    }
+    .contact-details-wraper{
+        width: 65%;
+    }
+    .text-container {
+        min-height: 215px;
+        padding-top: 8px;
+    }
+}
+@media screen and (min-width:1360px) {
+    .contact-details-container{
+        margin-top: 35px;
+        background-position: 58% 46%;
+        background-size: 1349px;
+        min-height: 479px;
+        padding-top: 74px;
+        max-width: 100%;
+    }
+    .text-container {
+        padding-top: 5px;
+    }
+    .text-container h3{
+        font-size: 20.5px;
+    }
+    .text-container p{
+        font-size: 18.5px;
+        padding-bottom: 5px;
+    }
+    .contact-details-container h5{
+        font-size: 19.5px;
+    }
+    .text-cont-first-pair{
+        margin-right: 20.5px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .contact-details-container{
+        margin-top: 35px;
+        background-position: 58% 45%;
+        background-size: 1562px;
+        min-height: 560px;
+        padding-top: 91px;
+    }
+    .contact-details-wraper{
+        width: 60%;
+    }
+    .text-container {
+        min-height: 215px;
+        padding-top: 5px;
+    }
+    .text-container h3{
+        font-size: 21px;
+    }
+    .text-container p{
+        font-size: 19px;
+        padding-bottom: 14px;
+    }
+    .contact-details-container h5{
+        font-size: 20px;
+    }
+    .text-cont-first-pair{
+        margin-right: 21px;
+    }
+}
+@media screen and (min-width:1600px) {
+    .contact-details-container{
+        margin-top: 35px;
+        background-position: 43% 54%;
+        background-size: 1641px;
+        min-height: 602px;
+        padding-top: 106px;
+    }
+    .contact-details-wraper{
+        width: 58%;
+    }
+    .text-container {
+        min-height: 225px;
+        padding-top: 5px;
+    }
+    .text-container h3{
+        font-size: 21.5px;
+    }
+    .text-container p{
+        font-size: 19.5px;
+        padding-bottom: 14px;
+    }
+    .contact-details-container h5{
+        font-size: 20.5px;
+    }
+    .text-cont-first-pair{
+        margin-right: 21.5px;
+    }
+}
+@media screen and (min-width:1920px) {
+    .contact-details-container{
+        margin-top: 75px;
+        background-position: 51% 38%;
+        background-size: 2134px;
+        min-height: 670px;
+        padding-top: 148px;
+    }
+    .contact-details-wraper{
+        width: 58%;
+    }
+    .text-container {
+        min-height: 267px;
+        padding-top: 5px;
+        border-radius: 14% !important;
+    }
+    .text-container h3{
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin: 5px 0 !important;
+    }
+    .text-container p{
+        font-size: 23.5px;
+        padding-bottom: 20px;
+    }
+    .contact-details-container h5{
+        font-size: 25.5px;
+    }
+    .text-cont-first-pair{
+        margin-right: 26.5px;
+    }
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: #333333;
+    height: 220px;
+}
+.footer-wraper {
+    max-width: 100%;
+}
+.instruction-para{
+    font-size: 13px;
+}
+.link-para{
+    font-size: 11px;
+}
+.footer-wraper p{
+    color: var(--default-white-clr);
+}
+.footer-wraper a{
+    color: #adcce9;
+}
+@media screen and (min-width:1600px){
+    .footer-container {
+        height: 260px;
+    }
+    .instruction-para{
+        font-size: 15px;
+    }
+    .link-para{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:1920px){
+    .footer-container {
+        height: 270px;
+    }
+    .instruction-para{
+        font-size: 16px;
+    }
+    .link-para{
+        font-size: 14px;
+    }
+}
